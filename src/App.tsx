@@ -71,7 +71,7 @@ const App = () => {
 
   return (
     <div className="flex flex-col align-start w-full p-1 m-2">
-      <h1 className="text-5xl">React Quiz</h1>
+      <h1 className="text-5xl underline">React Ts Quiz</h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
       <button
           onClick={startTrivia}
@@ -101,7 +101,7 @@ const App = () => {
       number !== TOTAL_QUESTIONS - 1 ? (
         <button
           onClick={nextQuestion}
-          className=" text-2xl text-green-400"
+          className=" text-2xl text-red-400"
         >
           Next Question
         </button>

@@ -19,7 +19,7 @@ const QuestionCard: React.FC<Props> = ({
   totalQuestions,
 }) =>(
 
-  <div className="bg-green-300 w-100 border-r-2 m-2">
+  <div className="bg-green-300 w-full border-r-2 m-2">
 
    <p className="text-2xl text-black m-2">Question: {questionNbr}/ {totalQuestions}</p>
    <p className=" text-2xl text-black m-2" dangerouslySetInnerHTML={{__html: question}} />
