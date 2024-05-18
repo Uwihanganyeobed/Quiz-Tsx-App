@@ -80,7 +80,7 @@ const App = () => {
           Start
         </button>
       ) : null}
-      {!gameOver ? <p className="text-2xl mt-5 text-green-500">Score: {score}</p> : null}
+      {!gameOver ? <p className="text-3xl mt-5 text-orange-500 font-semibold">Score: {score}</p> : null}
 
       {loading && <p className="text-2xl mt-3 text-red-400">Loading Questions ...</p>}
 
@@ -101,7 +101,7 @@ const App = () => {
       number !== TOTAL_QUESTIONS - 1 ? (
         <button
           onClick={nextQuestion}
-          className=" text-2xl text-red-400"
+          className=" text-2xl text-red-400 font-bold"
         >
           Next Question
         </button>
